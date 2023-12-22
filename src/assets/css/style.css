@@ -13,6 +13,10 @@
     font-size: 1.2rem;
 }
 
+#fullDescription {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 /* Removing outline and box-shadow for navbar toggler */
 .navbar-toggler:focus,
 .navbar-toggler:active,
