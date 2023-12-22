@@ -10,7 +10,7 @@ const nasaApiUri = 'https://api.nasa.gov/planetary/apod';
 
 // Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function () {
-    tagline.style.setProperty("margin-top", screenWidth < 480 ? "4vh" : "13vh", "important");
+    tagline.style.setProperty("margin-top", screenWidth < 480 ? "18vh" : "13vh", "important");
 
     const categoriesDropDown = document.getElementById('categoriesDropDown');
     if (categoriesDropDown) {
@@ -86,7 +86,7 @@ function updateResultCards(items) {
             // Show result modal and adjust tagline margin
             resultModal.show();
             tagline.style.display = 'block';
-            tagline.style.setProperty("margin-top", screenWidth < 480 ? "4vh" : "13vh", "important");
+            tagline.style.setProperty("margin-top", screenWidth < 480 ? "18vh" : "13vh", "important");
         } else {
             // Hide tagline and display result cards
             hideTagline();
@@ -163,7 +163,7 @@ function showResultModal() {
     var resultModal = new bootstrap.Modal(document.getElementById('resultModal'));
     resultModal.show();
     tagline.style.display = 'block';
-    tagline.style.setProperty("margin-top", screenWidth < 480 ? "4vh" : "13vh", "important");
+    tagline.style.setProperty("margin-top", screenWidth < 480 ? "18vh" : "13vh", "important");
 }
 
 function hideTagline() {
